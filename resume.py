@@ -4,6 +4,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+#.env
+#OPENAIKEY=
+#SKILLS=
+
+f = open("test.txt", "r")
+
+
 client = OpenAI(api_key=os.getenv("OPENAIKEY"))
 
 completion = client.chat.completions.create(
