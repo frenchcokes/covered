@@ -10,6 +10,10 @@ load_dotenv()
 
 f = open("test.txt", "r")
 
+for line in f:
+    pass
+
+f.close()
 
 client = OpenAI(api_key=os.getenv("OPENAIKEY"))
 
